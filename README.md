@@ -6,20 +6,54 @@ No build step, no server, no dependencies. It is one HTML file.
 
 > **Spoiler warning.** The Plot & cast and Mandelverse tabs contain full-novel spoilers.
 
+![The field guide's Side A hero: the Exit Party title, tagline, evening stats and the A/B switch over a split skyline](docs/screenshots/hero-side-a.jpg)
+
 ## Features
 
-- **26 discussion questions** in four tiers (Intro, Intermediate, Advanced, Wildcard), each with:
+- **26 discussion questions** in four movements (I · The arrival, II · Crossing over, III · Beyond the veil, IV · The afterparty), each with:
   - why to ask it,
-  - possible interpretations,
+  - possible readings,
   - discussion cues,
   - author perspective with links to interviews,
-  - linked follow-up questions,
+  - linked follow-up questions ("the thread"),
   - a live notes box.
-- **Moderator tools:** search, difficulty filter, starred questions, "unasked only", a random-question picker that favors questions not yet discussed, and expand/collapse for all notes.
-- **Spoiler and debate filters:** hide spoiler-heavy questions, or show only the ones that tend to split the room.
-- **Session tracking:** a progress bar, "mark discussed", and notes per question.
-- **Reference tabs:** plot refresher, character files for both Americas, recurring motifs, a Mandelverse connections timeline, and an interview source list.
-- **Side A / Side B theme toggle**, plus responsive layout, reduced-motion support and a print stylesheet.
+- **Moderator tools:** search (press `/`), a Filters panel (level, spoilers, debate picks, expand all notes), starred questions, "unasked only", and a random-question picker that favors questions not yet discussed.
+- **Running order:** on wide screens, a sticky sidebar lists every question by movement, marks discussed and starred ones, and follows your scroll position.
+- **Presenter mode:** show one question full screen for the room, step with ← / →, mark it discussed, and press Esc to return.
+- **Session tracking:** a progress bar with one segment per question, color-coded by movement, plus "mark discussed" and per-question notes.
+- **Reference tabs:** plot refresher, character files split by side, recurring motifs, a Mandelverse timeline whose legend distinguishes direct links, thematic echoes and unverified claims, and interview cards showing which questions cite each source.
+- **Side A / Side B:** two visual worlds, not just two palettes. Side A is warm dusk with drifting jacaranda petals. Side B is cold and rigid, with lit tower windows and a scanning beam. Switching plays a circular reveal.
+- Responsive down to phone width, keyboard and screen-reader friendly, reduced-motion aware, and a print stylesheet that expands every note into a paper field guide.
+
+## Screenshots
+
+**Side B.** Flip the switch and the page turns cold and rigid: square corners, lit tower windows, camera lights and a scanning beam.
+
+![The Side B hero in cold blue tones, with lit windows across the ordered skyline](docs/screenshots/hero-side-b.jpg)
+
+**Questions.** The running order tracks where you are in the evening. Moderator notes open into why to ask, possible readings, discussion cues and the author's perspective.
+
+![The Questions tab with the running-order sidebar and question 08's moderator notes expanded](docs/screenshots/questions.jpg)
+
+**Presenter mode.** One question, full screen, for the room.
+
+![Presenter mode showing question 09 in large type, with previous, next and mark-discussed controls](docs/screenshots/presenter.jpg)
+
+**Mandelverse.** The legend matches the timeline: solid for direct links, dashed for thematic echoes, dotted for unverified claims.
+
+![The Mandelverse timeline, with year markers and connection cards styled by connection type](docs/screenshots/mandelverse.jpg)
+
+**Character files**, split by side.
+
+![Character files in two columns, Side A and Side B](docs/screenshots/cast.jpg)
+
+**On a phone.**
+
+<p>
+  <img src="docs/screenshots/mobile-hero.jpg" alt="Phone view of the hero and the compact toolbar" width="280">
+  &nbsp;
+  <img src="docs/screenshots/mobile-notes.jpg" alt="Phone view of question 14 with its moderator notes open" width="280">
+</p>
 
 ## Quick start
 
@@ -47,6 +81,7 @@ exit-party-deluxe.html   # the whole app: markup, CSS, content data and JS
 README.md                # this file
 CONTRIBUTING.md          # how to contribute
 CLAUDE.md                # orientation for AI coding assistants
+docs/screenshots/        # images used in this README
 ```
 
 ## Contributing
