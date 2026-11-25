@@ -6,6 +6,8 @@ No build step, no server, no dependencies. It is one HTML file.
 
 > **Spoiler warning.** The Plot & cast and Mandelverse tabs contain full-novel spoilers.
 
+![The field guide's Side A hero: the Exit Party title, tagline, evening stats and the A/B switch over a split skyline](docs/screenshots/hero-side-a.jpg)
+
 ## Features
 
 - **26 discussion questions** in four movements (I · The arrival, II · Crossing over, III · Beyond the veil, IV · The afterparty), each with:
@@ -22,6 +24,36 @@ No build step, no server, no dependencies. It is one HTML file.
 - **Reference tabs:** plot refresher, character files split by side, recurring motifs, a Mandelverse timeline whose legend distinguishes direct links, thematic echoes and unverified claims, and interview cards showing which questions cite each source.
 - **Side A / Side B:** two visual worlds, not just two palettes. Side A is warm dusk with drifting jacaranda petals. Side B is cold and rigid, with lit tower windows and a scanning beam. Switching plays a circular reveal.
 - Responsive down to phone width, keyboard and screen-reader friendly, reduced-motion aware, and a print stylesheet that expands every note into a paper field guide.
+
+## Screenshots
+
+**Side B.** Flip the switch and the page turns cold and rigid: square corners, lit tower windows, camera lights and a scanning beam.
+
+![The Side B hero in cold blue tones, with lit windows across the ordered skyline](docs/screenshots/hero-side-b.jpg)
+
+**Questions.** The running order tracks where you are in the evening. Moderator notes open into why to ask, possible readings, discussion cues and the author's perspective.
+
+![The Questions tab with the running-order sidebar and question 08's moderator notes expanded](docs/screenshots/questions.jpg)
+
+**Presenter mode.** One question, full screen, for the room.
+
+![Presenter mode showing question 09 in large type, with previous, next and mark-discussed controls](docs/screenshots/presenter.jpg)
+
+**Mandelverse.** The legend matches the timeline: solid for direct links, dashed for thematic echoes, dotted for unverified claims.
+
+![The Mandelverse timeline, with year markers and connection cards styled by connection type](docs/screenshots/mandelverse.jpg)
+
+**Character files**, split by side.
+
+![Character files in two columns, Side A and Side B](docs/screenshots/cast.jpg)
+
+**On a phone.**
+
+<p>
+  <img src="docs/screenshots/mobile-hero.jpg" alt="Phone view of the hero and the compact toolbar" width="280">
+  &nbsp;
+  <img src="docs/screenshots/mobile-notes.jpg" alt="Phone view of question 14 with its moderator notes open" width="280">
+</p>
 
 ## Quick start
 
@@ -49,6 +81,7 @@ exit-party-deluxe.html   # the whole app: markup, CSS, content data and JS
 README.md                # this file
 CONTRIBUTING.md          # how to contribute
 CLAUDE.md                # orientation for AI coding assistants
+docs/screenshots/        # images used in this README
 ```
 
 ## Contributing

@@ -63,6 +63,7 @@ The `<style>` block runs from line 2 to the `</style>` line, one line per commen
 - Match the existing compact style. Minified-ish CSS and dense JS are intentional, so don't reformat the whole file in an unrelated change.
 - Typographic apostrophes (’) in prose.
 - Small, focused diffs. Mention which question IDs or sections changed.
+- `docs/screenshots/` holds the README images. When the design changes visibly, retake them: desktop at 1280×800 @2x and phone at 390×844 @3x, saved as JPEGs about 1600px (desktop) or 585px (phone) wide.
 
 ## Verifying changes
 
