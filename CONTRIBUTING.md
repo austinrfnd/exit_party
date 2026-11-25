@@ -29,7 +29,9 @@ Everything is in `exit-party-deluxe.html`:
 | `<style>` | All CSS, with theme colors as variables on `:root` (Side B overrides under `body.sideB`) |
 | `sources` | Interview sources, keyed by short ID (`LH`, `NPR`, ...) |
 | `Q` | The discussion questions, one array per question |
-| `cast`, `motifs`, `connections` | Reference tab content |
+| `cast` | Character files as `[name, sideTag, body]`. A tag of exactly `Side A` or `Side B` places the file in that column; any other tag puts it in the "Displaced" band |
+| `motifs` | `[title, body]` |
+| `connections` | Mandelverse timeline as `[title, tag, body]`. Title must be `YYYY · Book title`. The tag text picks the node style: "Direct…" is solid, "…echo…" is dashed, "check"/"unverified" is dotted, "Convergence" is highlighted |
 | `#plot` template | The plot refresher, near the end of the script |
 
 ## Adding a question
@@ -50,7 +52,7 @@ Append a new array to `Q`. Fields are positional:
 | `spoiler` | `1` if it reveals late-book events, else `0` |
 | `debate` | `1` if it tends to split the room, else `0` |
 
-Then update the hard-coded "26 prompts" count in the section heading.
+Counts in the heading, hero and progress bar are derived from the data, so there's nothing else to update. Keep `theme` short (one to three words), because it also labels the question in the running order, follow-up chips and progress-bar tooltips.
 
 Good questions are open-ended, answerable without a literature degree, and have a clear "why ask" for the moderator. Provide at least two or three genuinely different interpretations, so the moderator isn't steering toward one answer.
 

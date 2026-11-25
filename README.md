@@ -8,18 +8,20 @@ No build step, no server, no dependencies. It is one HTML file.
 
 ## Features
 
-- **26 discussion questions** in four tiers (Intro, Intermediate, Advanced, Wildcard), each with:
+- **26 discussion questions** in four movements (I · The arrival, II · Crossing over, III · Beyond the veil, IV · The afterparty), each with:
   - why to ask it,
-  - possible interpretations,
+  - possible readings,
   - discussion cues,
   - author perspective with links to interviews,
-  - linked follow-up questions,
+  - linked follow-up questions ("the thread"),
   - a live notes box.
-- **Moderator tools:** search, difficulty filter, starred questions, "unasked only", a random-question picker that favors questions not yet discussed, and expand/collapse for all notes.
-- **Spoiler and debate filters:** hide spoiler-heavy questions, or show only the ones that tend to split the room.
-- **Session tracking:** a progress bar, "mark discussed", and notes per question.
-- **Reference tabs:** plot refresher, character files for both Americas, recurring motifs, a Mandelverse connections timeline, and an interview source list.
-- **Side A / Side B theme toggle**, plus responsive layout, reduced-motion support and a print stylesheet.
+- **Moderator tools:** search (press `/`), a Filters panel (level, spoilers, debate picks, expand all notes), starred questions, "unasked only", and a random-question picker that favors questions not yet discussed.
+- **Running order:** on wide screens, a sticky sidebar lists every question by movement, marks discussed and starred ones, and follows your scroll position.
+- **Presenter mode:** show one question full screen for the room, step with ← / →, mark it discussed, and press Esc to return.
+- **Session tracking:** a progress bar with one segment per question, color-coded by movement, plus "mark discussed" and per-question notes.
+- **Reference tabs:** plot refresher, character files split by side, recurring motifs, a Mandelverse timeline whose legend distinguishes direct links, thematic echoes and unverified claims, and interview cards showing which questions cite each source.
+- **Side A / Side B:** two visual worlds, not just two palettes. Side A is warm dusk with drifting jacaranda petals. Side B is cold and rigid, with lit tower windows and a scanning beam. Switching plays a circular reveal.
+- Responsive down to phone width, keyboard and screen-reader friendly, reduced-motion aware, and a print stylesheet that expands every note into a paper field guide.
 
 ## Quick start
 

@@ -14,6 +14,6 @@
 - [ ] Checked phone width and desktop, Side A and Side B
 - [ ] Spoiler / debate flags are correct on new questions
 - [ ] No existing question IDs changed or reused
-- [ ] Follow-up IDs exist; "26 prompts" count updated if needed
+- [ ] Follow-up IDs exist (counts are derived from the data, nothing to update by hand)
 - [ ] No long quotes or copied passages
 - [ ] Docs updated if structure or behavior changed
