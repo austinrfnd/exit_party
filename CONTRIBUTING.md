@@ -29,7 +29,8 @@ Everything is in `exit-party-deluxe.html`:
 | `<style>` | All CSS, with theme colors as variables on `:root` (Side B overrides under `body.sideB`) |
 | `sources` | Interview sources, keyed by short ID (`LH`, `NPR`, ...) |
 | `Q` | The discussion questions, one array per question |
-| `cast` | Character files as `[name, sideTag, body, facts]`. A tag of exactly `Side A` or `Side B` places the file in that column; any other tag puts it in the "Displaced" band. `facts` holds sourced details (`age`, `aka`, `look`, `race`, `origin`, `role`, `family`, `note`), a `check` note for claims the sources don't support, and `src` (source keys) |
+| `cast` | Character files as `[name, sideTag, body, facts]`. A tag of exactly `Side A` or `Side B` places an unpaired file in that column; any other tag shows as a "displaced" badge. `body` is the one-line logline on the closed file. `facts` holds sourced details (`age`, `aka`, `look`, `race`, `origin`, `role`, `family`, `note`), a `check` note for claims the sources don't support, an optional `guess` for clearly labelled name-based speculation, and `src` (source keys) |
+| `pairs` | Counterparts as `[Side A name, Side B name]`, using the exact `cast` names. Each pair renders as a facing row |
 | `refs` | Reviews cited by character files, keyed like `sources` |
 | `motifs` | `[title, body]` |
 | `connections` | Mandelverse timeline as `[title, tag, body]`. Title must be `YYYY · Book title`. The tag text picks the node style: "Direct…" is solid, "…echo…" is dashed, "check"/"unverified" is dotted, "Convergence" is highlighted |
@@ -60,6 +61,8 @@ Good questions are open-ended, answerable without a literature degree, and have 
 ## Adding character details
 
 Only add a fact to a character's `facts` if a review or interview states it, and list that source in `src` (add it to `refs` if it's a review). Leave a field out rather than guessing. Never infer race or ethnicity from a name, and don't use Goodreads or other reader reviews as sources. If you can't confirm something already in a description, add a short `check` note instead of deleting it.
+
+Speculation about heritage or casting, such as what a name might suggest, goes only in `guess`, never in `race`. The page labels it as speculation. Keep it hedged, and say when a name it depends on isn't in our sources.
 
 ## Adding a source
 
