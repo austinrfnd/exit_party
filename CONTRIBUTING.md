@@ -29,7 +29,8 @@ Everything is in `exit-party-deluxe.html`:
 | `<style>` | All CSS, with theme colors as variables on `:root` (Side B overrides under `body.sideB`) |
 | `sources` | Interview sources, keyed by short ID (`LH`, `NPR`, ...) |
 | `Q` | The discussion questions, one array per question |
-| `cast` | Character files as `[name, sideTag, body]`. A tag of exactly `Side A` or `Side B` places the file in that column; any other tag puts it in the "Displaced" band |
+| `cast` | Character files as `[name, sideTag, body, facts]`. A tag of exactly `Side A` or `Side B` places the file in that column; any other tag puts it in the "Displaced" band. `facts` holds sourced details (`age`, `aka`, `look`, `race`, `origin`, `role`, `family`, `note`), a `check` note for claims the sources don't support, and `src` (source keys) |
+| `refs` | Reviews cited by character files, keyed like `sources` |
 | `motifs` | `[title, body]` |
 | `connections` | Mandelverse timeline as `[title, tag, body]`. Title must be `YYYY · Book title`. The tag text picks the node style: "Direct…" is solid, "…echo…" is dashed, "check"/"unverified" is dotted, "Convergence" is highlighted |
 | `#plot` template | The plot refresher, near the end of the script |
@@ -55,6 +56,10 @@ Append a new array to `Q`. Fields are positional:
 Counts in the heading, hero and progress bar are derived from the data, so there's nothing else to update. Keep `theme` short (one to three words), because it also labels the question in the running order, follow-up chips and progress-bar tooltips.
 
 Good questions are open-ended, answerable without a literature degree, and have a clear "why ask" for the moderator. Provide at least two or three genuinely different interpretations, so the moderator isn't steering toward one answer.
+
+## Adding character details
+
+Only add a fact to a character's `facts` if a review or interview states it, and list that source in `src` (add it to `refs` if it's a review). Leave a field out rather than guessing. Never infer race or ethnicity from a name, and don't use Goodreads or other reader reviews as sources. If you can't confirm something already in a description, add a short `check` note instead of deleting it.
 
 ## Adding a source
 

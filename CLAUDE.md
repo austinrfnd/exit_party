@@ -27,7 +27,11 @@ The `<style>` block runs from line 2 to the `</style>` line, one line per commen
   - Level is one of `Intro | Intermediate | Advanced | Wildcard`. `LV` holds that order and `MV` maps each level to its movement numeral and title (I · The arrival … IV · The afterparty).
   - IDs are not in level order (e.g. #22 is Advanced, #23 is Wildcard). `ordered()` groups by level, relying on a stable sort.
   - `theme` doubles as the short label in the running-order rail, follow-up chips and progress-tick tooltips, so keep it short.
-- `cast`: `[name, sideTag, body]`. A tag of exactly `Side A` or `Side B` puts the file in that column. Any other tag (e.g. `Displaced from A`) puts it in the "Displaced" band, with the tag shown on the file.
+- `cast`: `[name, sideTag, body, facts]`. A tag of exactly `Side A` or `Side B` puts the file in that column. Any other tag (e.g. `Displaced from A`) puts it in the "Displaced" band, with the tag shown on the file.
+  - `facts` is an object rendered as the file's detail list by `facts()`. Keys: `age`, `aka`, `look`, `race`, `origin`, `role`, `family`, `note`, `check`, `src`. `age`, `look` and `race` always show, reading "Not stated in our sources" when missing. Other keys show only when set.
+  - Every fact must come from a review or interview listed in `src` (keys from `sources` or `refs`). Never fill a field from a guess, a name, or a Goodreads/reader review. No source states any character's race or ethnicity, so `race` stays empty unless one does.
+  - `check` flags a claim in `body` that our sources don't support or that they contradict. It renders in the caution color as "Check your copy". Prefer flagging over deleting the organizer's text.
+- `refs`: `{ID: [publication, url]}` for reviews cited by character files. These are not author interviews, so they stay out of `sources` (which feeds the Interviews tab).
 - `motifs`: `[title, body]`.
 - `connections`: `[title, tag, body]`. `title` must be `YYYY · Book title`, because the year is split off into the timeline column. `tag` text sets the node style via `kind()`: contains "converg" → convergence, "check"/"unverified" → dotted, "direct" → solid, otherwise → dashed echo. The legend promises these styles, so keep tags honest.
 
@@ -45,7 +49,7 @@ The `<style>` block runs from line 2 to the `</style>` line, one line per commen
 - `switchTab()` toggles `.hidden` on `main section`s, updates `aria-selected`/roving `tabindex`, and hides `#filters` outside the Questions tab.
 - The sticky toolbar's height is mirrored into the `--stick` CSS variable by a ResizeObserver. Scroll margins and the rail's sticky offset use it.
 - Presenter mode (`present`, `paintStage`, `step`, `closeStage`) is a full-screen dialog over the currently visible questions. ←/→ step, Esc closes, Tab is trapped.
-- Side A/B is `body.sideB`, which overrides the color tokens *and* the radii (`--r`, `--r2`, `--pill`), so Side B is literally more rigid. The hero SVG is colored entirely by CSS classes (`.ha-a`/`.ha-b` light the active city; petals only on A, cameras and scan beam only on B). `flip()` uses a View Transition with a circular reveal from the switch, falling back to an instant swap without support or with reduced motion.
+- Side A/B is `body.sideB`, which overrides the color tokens *and* the radii (`--r`, `--r2`, `--pill`), so Side B is literally more rigid. The hero SVG is colored entirely by CSS classes. Its left half (`.ha-a`) is a Los Angeles skyline (palms, City Hall, downtown towers) and its right half (`.ha-b`) is Paris (Notre-Dame, the Eiffel Tower, Sacré-Cœur, Montparnasse). The active side's city lights up; petals only show on A, cameras and the scan beam only on B. Each half has its own coordinates label. On phones the SVG is pinned to the hero's bottom at 150% width so both landmark clusters stay visible. `flip()` uses a View Transition with a circular reveal from the switch, falling back to an instant swap without support or with reduced motion.
 
 ## Gotchas
 
