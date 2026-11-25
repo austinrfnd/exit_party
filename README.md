@@ -21,7 +21,7 @@ No build step, no server, no dependencies. It is one HTML file.
 - **Running order:** on wide screens, a sticky sidebar lists every question by movement, marks discussed and starred ones, and follows your scroll position.
 - **Presenter mode:** show one question full screen for the room, step with ← / →, mark it discussed, and press Esc to return.
 - **Session tracking:** a progress bar with one segment per question, color-coded by movement, plus "mark discussed" and per-question notes.
-- **Reference tabs:** plot refresher, character files split by side (each with sourced details like age, aliases, appearance, race/ethnicity and relationships, plus "Check your copy" notes where reviews don't back up our notes), recurring motifs, a Mandelverse timeline whose legend distinguishes direct links, thematic echoes and unverified claims, and interview cards showing which questions cite each source.
+- **Reference tabs:** plot refresher, character files laid out as counterparts facing each other across a seam (Ari and Ibari, Gloria and Nico, the two Kareems), each opening into a full file with sourced details like age, aliases, appearance, race/ethnicity and relationships, plus "Check your copy" notes where reviews don't back up our notes, and a separate, clearly labelled name-based heritage guess for dream casting), recurring motifs, a Mandelverse timeline whose legend distinguishes direct links, thematic echoes and unverified claims, and interview cards showing which questions cite each source.
 - **Side A / Side B:** two visual worlds, not just two palettes. Side A is warm dusk over a Los Angeles skyline, with palms and drifting jacaranda petals. Side B is cold and rigid over a Paris skyline, with lit windows, camera lights and a scanning beam. Switching plays a circular reveal.
 - Responsive down to phone width, keyboard and screen-reader friendly, reduced-motion aware, and a print stylesheet that expands every note into a paper field guide.
 
@@ -43,9 +43,9 @@ No build step, no server, no dependencies. It is one HTML file.
 
 ![The Mandelverse timeline, with year markers and connection cards styled by connection type](docs/screenshots/mandelverse.jpg)
 
-**Character files**, split by side, each with sourced details and a source list.
+**Character files.** Counterparts face each other across the seam. Each file opens into its sourced details, a source list and, set apart, a name-based guess.
 
-![Character files in Side A and Side B columns, with age, aliases, appearance, race/ethnicity and source links](docs/screenshots/cast.jpg)
+![Counterpart character files facing each other across a seam, with Ari Waker's file closed and Ibari Waker's open to show her details, sources and a labelled name-based guess](docs/screenshots/cast.jpg)
 
 **On a phone.**
 
@@ -90,7 +90,7 @@ Contributions are welcome, especially new questions, corrections and better sour
 
 ## Content and sources
 
-Plot and character summaries are discussion refreshers assembled from published interviews and the organizer's notes. The detail fields on each character file come only from the reviews and interviews linked on that file. Anything they don't cover reads "Not stated in our sources", and claims they don't support are flagged "Check your copy". They are **not** verified chapter by chapter against the novel. Some items, such as certain Mandelverse cameos, are explicitly marked unverified in the app. Please check details against your copy before correcting or adding anything.
+Plot and character summaries are discussion refreshers assembled from published interviews and the organizer's notes. The detail fields on each character file come only from the reviews and interviews linked on that file. Anything they don't cover reads "Not stated in our sources", and claims they don't support are flagged "Check your copy". The "Name-based guess" on each file is speculation from the character's name (and, in places, surnames from another reader guide that our sources don't confirm). It is not a statement about the book. They are **not** verified chapter by chapter against the novel. Some items, such as certain Mandelverse cameos, are explicitly marked unverified in the app. Please check details against your copy before correcting or adding anything.
 
 Interview links point to the original publishers. Summaries are paraphrased, not quoted at length. Please keep it that way.
 
